@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@android:color/black">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:gravity="center_vertical" android:paddingStart="8dp" android:paddingEnd="16dp">
+        <ImageButton android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_preview_back"
+            android:padding="10dp" android:contentDescription="@string/back"/>
+        <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <LinearLayout android:id="@+id/btnSelect" android:layout_width="wrap_content" android:layout_height="48dp"
+            android:gravity="center" android:paddingStart="12dp" android:paddingEnd="4dp"
+            android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+            <ImageView android:id="@+id/selectIcon" android:layout_width="30dp" android:layout_height="30dp"
+                android:src="@drawable/ic_diary_done" android:importantForAccessibility="no"/>
+            <TextView android:id="@+id/selectLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="6dp" android:text="@string/preview_select" android:textSize="16sp" android:textColor="@color/album_text"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/mediaContainer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.betterme.app.ZoomImageView android:id="@+id/photoView" android:layout_width="match_parent" android:layout_height="match_parent"
+            android:contentDescription="@string/photo_preview_description"/>
+        <androidx.media3.ui.PlayerView android:id="@+id/playerView" android:layout_width="match_parent" android:layout_height="match_parent"
+            app:use_controller="false" app:resize_mode="fit" app:shutter_background_color="@android:color/black" android:visibility="gone"/>
+        <View android:id="@+id/videoTapArea" android:layout_width="match_parent" android:layout_height="match_parent"
+            android:clickable="true" android:focusable="true" android:contentDescription="@string/preview_toggle_playback" android:visibility="gone"/>
+        <ImageButton android:id="@+id/btnPlay" android:layout_width="76dp" android:layout_height="76dp" android:layout_gravity="center"
+            android:src="@drawable/ic_preview_play" android:padding="12dp" android:background="@android:color/transparent"
+            android:contentDescription="@string/preview_play" android:visibility="gone"/>
+        <LinearLayout android:id="@+id/videoControls" android:layout_width="match_parent" android:layout_height="56dp"
+            android:layout_gravity="bottom" android:gravity="center_vertical" android:paddingHorizontal="12dp"
+            android:background="#66000000" android:visibility="gone">
+            <TextView android:id="@+id/currentTime" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="00:00" android:textColor="@android:color/white" android:textSize="12sp"/>
+            <SeekBar android:id="@+id/seekBar" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1"
+                android:max="1000" android:thumbTint="@android:color/white" android:progressTint="@android:color/white"
+                android:progressBackgroundTint="#66FFFFFF" android:contentDescription="@string/preview_progress"/>
+            <TextView android:id="@+id/totalTime" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="00:00" android:textColor="@android:color/white" android:textSize="12sp"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/loading" android:layout_width="32dp" android:layout_height="32dp"
+            android:layout_gravity="center" android:indeterminateTint="@color/brand_gold" android:visibility="gone"/>
+        <LinearLayout android:id="@+id/errorPanel" android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="#EE000000" android:gravity="center" android:orientation="vertical" android:visibility="gone">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preview_error"
+                android:textColor="@color/album_text" android:textSize="15sp"/>
+            <Button android:id="@+id/btnRetry" android:layout_width="wrap_content" android:layout_height="48dp"
+                android:text="@string/preview_retry" android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:background="@drawable/bg_preview_footer" android:clipChildren="false" android:clipToPadding="false" android:paddingBottom="12dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/selectedStrip" android:layout_width="match_parent" android:layout_height="102dp"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="14dp" android:paddingBottom="14dp"
+            android:clipChildren="false" android:clipToPadding="false" android:scrollbars="none"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="56dp" android:paddingHorizontal="16dp" android:gravity="center_vertical">
+            <TextView android:id="@+id/selectionCount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:textColor="@color/album_muted" android:textSize="13sp"/>
+            <TextView android:id="@+id/btnNext" android:layout_width="wrap_content" android:layout_height="44dp" android:minWidth="140dp"
+                android:paddingHorizontal="22dp" android:gravity="center" android:background="@drawable/album_button"
+                android:textColor="@color/album_background" android:textSize="16sp" android:clickable="true" android:focusable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

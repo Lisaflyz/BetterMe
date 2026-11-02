@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Better Me</string>
+
+    <!-- Bottom tabs -->
+    <string name="tab_daily">每日</string>
+    <string name="tab_growth">成长</string>
+    <string name="tab_todo">待办</string>
+    <string name="todo_empty">暂无待办事项</string>
+    <string name="add_todo">添加待办</string>
+    <string name="todo_save">保存待办</string>
+    <string name="todo_saved">待办已保存到本机</string>
+    <string name="todo_load_error">暂时无法读取待办，请重试</string>
+    <string name="todo_delete_title">删除这条待办？</string>
+    <string name="todo_delete_cleanup_warning">待办已删除，部分附属文件暂未清理</string>
+    <string name="tab_add_desc">添加</string>
+
+    <!-- Popup -->
+    <string name="add_entry_title">添加记录</string>
+    <string name="add_gallery">记录日常</string>
+    <string name="add_text">成长复盘</string>
+    <string name="add_cancel">取消</string>
+
+    <!-- Placeholder content -->
+    <string name="daily_placeholder_title">每天进步一点点</string>
+    <string name="daily_placeholder_subtitle">这里是「每日」页面\n可以放当天打卡、日记或内容流</string>
+    <!-- Album picker (相册.jpg) -->
+    <string name="back">返回</string>
+    <string name="album_title">从相册选择</string>
+    <string name="album_count_hint">最多 9 张</string>
+    <string name="album_filter_all">全部</string>
+    <string name="album_filter_photo">照片</string>
+    <string name="album_filter_video">视频</string>
+    <string name="album_empty">暂无照片/视频
+请先授权相册权限</string>
+    <string name="album_tip">选中照片/视频后点下一步</string>
+    <string name="album_next_0">下一步</string>
+    <string name="album_next_n">下一步(%1$d)</string>
+    <string name="album_too_many">最多只能选择 9 张</string>
+    <string name="album_permission_denied">需要相册权限才能选择照片</string>
+    <string name="diary_page_loading">正在加载…</string>
+    <string name="diary_page_retry">加载失败，点击重试</string>
+    <string name="diary_page_more">加载更多</string>
+</resources>

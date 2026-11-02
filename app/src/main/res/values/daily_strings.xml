@@ -1,0 +1,16 @@
+<resources>
+    <string name="daily_more">日记更多操作</string>
+    <string name="daily_delete_title">删除这篇日记？</string>
+    <string name="daily_delete_message">删除后无法恢复。</string>
+    <string name="daily_delete_confirm">确定删除</string>
+    <string name="daily_delete_error">删除失败，请重试</string>
+    <string name="daily_delete_cleanup_warning">日记已删除，部分附属文件暂未清理</string>
+    <string name="daily_empty">还没有日常记录\n点击下方 +，记录今天的点滴</string>
+    <string name="daily_load_error">暂时无法读取日常记录，请重试</string>
+    <string name="daily_retry">重新加载</string>
+    <string name="daily_media_unavailable">媒体暂时无法加载</string>
+    <string name="daily_view_video">查看这篇视频日记</string>
+    <string name="daily_view_photo">查看这篇图片日记</string>
+    <string name="daily_photo">日记照片</string>
+    <string name="daily_page_counter">%1$d/%2$d</string>
+</resources>

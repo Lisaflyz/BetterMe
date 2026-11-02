@@ -1,0 +1,15 @@
+<resources>
+    <string name="preview_select">选择</string>
+    <string name="preview_selected">已选择</string>
+    <string name="preview_photo">图片预览</string>
+    <string name="preview_play">播放视频</string>
+    <string name="preview_toggle_playback">播放或暂停视频</string>
+    <string name="preview_progress">视频进度</string>
+    <string name="preview_error">暂时无法预览，请检查媒体或相册权限</string>
+    <string name="preview_retry">重试</string>
+    <style name="Theme.BetterMe.Preview" parent="Theme.BetterMe.Album">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+</resources>

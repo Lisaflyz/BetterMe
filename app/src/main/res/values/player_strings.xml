@@ -1,0 +1,7 @@
+<resources>
+    <string name="player_pause">暂停视频</string>
+    <string name="player_resume">继续播放视频</string>
+    <string name="player_replay">重新播放视频</string>
+    <string name="player_error">暂时无法播放此视频</string>
+    <string name="player_return_diary">返回日记</string>
+</resources>

@@ -1,0 +1,92 @@
+INSTRUMENTATION_STATUS: class=com.betterme.app.diary.DiaryFlowTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+com.betterme.app.diary.DiaryFlowTest:
+INSTRUMENTATION_STATUS: test=albumMixedSelectionPlaybackSaveAndReopen
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.betterme.app.diary.DiaryFlowTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stack=java.lang.NullPointerException
+	at com.betterme.app.diary.DiaryFlowTest.albumMixedSelectionPlaybackSaveAndReopen(DiaryFlowTest.kt:58)
+
+INSTRUMENTATION_STATUS: stream=
+Error in albumMixedSelectionPlaybackSaveAndReopen(com.betterme.app.diary.DiaryFlowTest):
+java.lang.NullPointerException
+	at com.betterme.app.diary.DiaryFlowTest.albumMixedSelectionPlaybackSaveAndReopen(DiaryFlowTest.kt:58)
+
+INSTRUMENTATION_STATUS: test=albumMixedSelectionPlaybackSaveAndReopen
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=com.betterme.app.diary.DiaryMediaDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+com.betterme.app.diary.DiaryMediaDeviceTest:
+INSTRUMENTATION_STATUS: test=cancellingAnExportRemovesTheIncompleteOutput
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.betterme.app.diary.DiaryMediaDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=cancellingAnExportRemovesTheIncompleteOutput
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.betterme.app.diary.DiaryMediaDeviceTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=photoFirstMixedExportHasOrderedPicturesAudioAndExpectedGeometry
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.betterme.app.diary.DiaryMediaDeviceTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=photoFirstMixedExportHasOrderedPicturesAudioAndExpectedGeometry
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.betterme.app.diary.DiaryMediaDeviceTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=silentFirstVideoStillRetainsLaterAudioAndPortraitOutput
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.betterme.app.diary.DiaryMediaDeviceTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=silentFirstVideoStillRetainsLaterAudioAndPortraitOutput
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.betterme.app.diary.DiaryMediaDeviceTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=originalsArePrivateAndCleanupProtectsSavedReferences
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.betterme.app.diary.DiaryMediaDeviceTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=originalsArePrivateAndCleanupProtectsSavedReferences
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 29.645
+There was 1 failure:
+1) albumMixedSelectionPlaybackSaveAndReopen(com.betterme.app.diary.DiaryFlowTest)
+java.lang.NullPointerException
+	at com.betterme.app.diary.DiaryFlowTest.albumMixedSelectionPlaybackSaveAndReopen(DiaryFlowTest.kt:58)
+
+FAILURES!!!
+Tests run: 5,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

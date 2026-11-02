@@ -1,0 +1,111 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "079c7713e0db3a8f216253f05dc9d107",
+    "entities": [
+      {
+        "tableName": "diary_metadata",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `kind` TEXT NOT NULL, `topicKey` TEXT NOT NULL, `topicLabel` TEXT NOT NULL, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kind",
+            "columnName": "kind",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "topicKey",
+            "columnName": "topicKey",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "topicLabel",
+            "columnName": "topicLabel",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updatedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_diary_metadata_kind_updatedAt_id",
+            "unique": false,
+            "columnNames": [
+              "kind",
+              "updatedAt",
+              "id"
+            ],
+            "orders": [
+              "ASC",
+              "DESC",
+              "DESC"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_diary_metadata_kind_updatedAt_id` ON `${TABLE_NAME}` (`kind` ASC, `updatedAt` DESC, `id` DESC)"
+          },
+          {
+            "name": "index_diary_metadata_kind_topicKey_updatedAt_id",
+            "unique": false,
+            "columnNames": [
+              "kind",
+              "topicKey",
+              "updatedAt",
+              "id"
+            ],
+            "orders": [
+              "ASC",
+              "ASC",
+              "DESC",
+              "DESC"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_diary_metadata_kind_topicKey_updatedAt_id` ON `${TABLE_NAME}` (`kind` ASC, `topicKey` ASC, `updatedAt` DESC, `id` DESC)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "diary_index_state",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '079c7713e0db3a8f216253f05dc9d107')"
+    ]
+  }
+}

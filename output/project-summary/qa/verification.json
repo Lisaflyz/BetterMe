@@ -1,0 +1,14 @@
+{
+  "document_pages": 21,
+  "visual_review": "已检查全部 21 页渲染图，未见文字截断、图片缺失或异常分页",
+  "screenshots": 13,
+  "screenshots_reused": true,
+  "activities_described": 7,
+  "activities_screenshotted": 7,
+  "layouts_described": 17,
+  "tests_run": false,
+  "build_run": false,
+  "source_changes": true,
+  "static_review": "cleanup-static-review.json",
+  "source_diff": "../旧编辑分支清理.diff"
+}

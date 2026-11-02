@@ -1,0 +1,81 @@
+{
+  "changes": [
+    {
+      "path": "app/src/main/java/com/betterme/app/DiaryActivity.kt",
+      "status": "modified"
+    },
+    {
+      "path": "app/src/main/java/com/betterme/app/AlbumActivity.kt",
+      "status": "modified"
+    },
+    {
+      "path": "app/src/main/java/com/betterme/app/EditActivity.kt",
+      "status": "deleted"
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "status": "modified"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_chevron_right.xml",
+      "status": "deleted"
+    },
+    {
+      "path": "app/src/main/res/drawable/bg_pill_primary.xml",
+      "status": "deleted"
+    },
+    {
+      "path": "app/src/main/res/drawable/bg_thumb_frame.xml",
+      "status": "deleted"
+    },
+    {
+      "path": "app/src/main/res/layout/activity_edit.xml",
+      "status": "deleted"
+    },
+    {
+      "path": "app/src/main/res/layout/item_edit_media_add.xml",
+      "status": "deleted"
+    },
+    {
+      "path": "app/src/main/res/layout/item_edit_media.xml",
+      "status": "deleted"
+    },
+    {
+      "path": "app/src/main/res/color/button_primary_text.xml",
+      "status": "deleted"
+    },
+    {
+      "path": "app/src/main/res/values/strings.xml",
+      "status": "modified"
+    },
+    {
+      "path": "README.md",
+      "status": "modified"
+    }
+  ],
+  "xml_files_parsed": 93,
+  "removed_strings": [
+    "album_result_toast",
+    "edit_bottom_visibility",
+    "edit_content_hint",
+    "edit_draft_todo",
+    "edit_location",
+    "edit_location_todo",
+    "edit_media_count",
+    "edit_publish",
+    "edit_publish_done",
+    "edit_save_draft",
+    "edit_title",
+    "edit_title_hint",
+    "edit_topic",
+    "edit_topic_todo",
+    "edit_visibility",
+    "edit_visibility_public",
+    "edit_visibility_todo"
+  ],
+  "removed_symbol_residuals": [],
+  "activities": 7,
+  "layouts": 17,
+  "tests_run": false,
+  "build_run": false
+}

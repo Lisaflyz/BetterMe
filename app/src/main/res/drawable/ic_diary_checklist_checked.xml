@@ -1,0 +1,8 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp" android:height="20dp" android:viewportWidth="20" android:viewportHeight="20">
+    <path android:fillColor="@color/checklist_checked"
+        android:pathData="M4,0 H16 Q20,0 20,4 V16 Q20,20 16,20 H4 Q0,20 0,16 V4 Q0,0 4,0 Z" />
+    <path android:fillColor="@android:color/transparent" android:strokeColor="#FFFFFF"
+        android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M5.8,10.4 L8.8,13.2 L14.6,7" />
+</vector>

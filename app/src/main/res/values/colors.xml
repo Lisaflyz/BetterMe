@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lake identity: forest green, champagne gold and warm mineral surfaces. -->
+    <color name="accent">#FFFFFF</color>
+    <color name="accent_light">#E5EDE7</color>
+    <color name="brand_gold">#D9C295</color>
+    <color name="gold_dark">#78633B</color>
+    <color name="gold_light">#F1EBDD</color>
+    <color name="on_primary">#FFFDF7</color>
+    <color name="nav_inactive">#B5C5BA</color>
+    <color name="ripple_light">#24FFFDF7</color>
+    <color name="ripple_dark">#18102D27</color>
+    <color name="error">#A3423C</color>
+
+    <!-- Icon-tile tints for the + popup options -->
+    <color name="tile_gallery">@color/accent_light</color>
+    <color name="tile_gallery_fg">@color/accent</color>
+    <color name="tile_camera">#E7ECE3</color>
+    <color name="tile_camera_fg">#45634C</color>
+    <color name="tile_video">#E2EBE7</color>
+    <color name="tile_video_fg">#355F55</color>
+    <color name="tile_text">@color/gold_light</color>
+    <color name="tile_text_fg">@color/gold_dark</color>
+
+    <!-- Text -->
+    <color name="text_primary">#20382F</color>
+    <color name="text_secondary">#596B61</color>
+    <color name="text_tertiary">#627166</color>
+    <color name="text_disabled">#495D52</color>
+    <color name="icon_muted">#8C9D8F</color>
+
+    <!-- Surfaces -->
+    <color name="white">#FFFFFF</color>
+    <color name="surface">#FFFDF7</color>
+    <color name="surface_muted">#E9EEE6</color>
+    <color name="bg_page">#F3F4EE</color>
+    <color name="sheet_divider">#DDE3D9</color>
+    <color name="ic_launcher_background">@color/accent</color>
+    <color name="bg_disabled">#CBD5CB</color>
+    <color name="overlay_dark">#B3102D27</color>
+    <color name="img_placeholder">#E3E9DF</color>
+</resources>

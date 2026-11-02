@@ -1,0 +1,19 @@
+<resources>
+    <color name="album_background">#14251F</color><color name="album_surface">#233A31</color>
+    <color name="album_text">#F4F1E9</color><color name="album_muted">#AAB9AF</color>
+    <color name="album_divider">#2A3B33</color>
+    <string name="album_order_tip">已选 %1$d 项 · 最多 9 项</string>
+    <string name="album_cancel">取消</string>
+    <string name="album_all_folders">全部相册</string>
+    <string name="album_choose_folder">切换相册</string>
+    <string name="album_live_photo">实况照片</string>
+    <style name="Theme.BetterMe.Album" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_gold</item><item name="colorAccent">@color/brand_gold</item>
+        <item name="android:statusBarColor">@color/album_background</item><item name="android:navigationBarColor">@color/album_background</item>
+        <item name="android:windowLightStatusBar">false</item><item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowBackground">@color/album_background</item>
+    </style>
+    <style name="Theme.BetterMe.Player" parent="Theme.BetterMe.Album">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>

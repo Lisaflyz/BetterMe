@@ -1,0 +1,5 @@
+<resources>
+    <color name="checklist_checked">#E5B900</color>
+    <string name="checklist_item_hint">清单内容</string>
+    <string name="checklist_item_description">清单：%1$s</string>
+</resources>

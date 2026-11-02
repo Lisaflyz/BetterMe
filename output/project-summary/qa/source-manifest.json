@@ -1,0 +1,558 @@
+[
+  {
+    "path": "app/src/main/java/com/betterme/app/ZoomImageView.kt",
+    "sha256": "61eaeccf8f589830c450b4bdd2c585831154d9fee88b06ea34777dc73055f690"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/DayRecordViewModel.kt",
+    "sha256": "5b3f127e9816e5a5e90e29bb8d70f3f6fa3c5996dad69c21491e9a826d2da4a6"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/VideoPlayerActivity.kt",
+    "sha256": "231e4c20d18506f4478f7ffb919ba79b8aeb93559f7b0ffb64aedb78a883647f"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/DiaryActivity.kt",
+    "sha256": "aa8d433e23fb9251fe23f05be0167e49faa1410e1e5509d0ceaeb1f6855f08b1"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/MainActivity.kt",
+    "sha256": "6f10340f32a459bae44b3b9343aa209caf30cf547b2a25ac96db06cd7274f456"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/AlbumSelectedAdapter.kt",
+    "sha256": "70cd9ec73a9c55a4c8e7e010d0c50007e7b71e8c62c0d358f698f3d2babb593b"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/MediaThumbLoader.kt",
+    "sha256": "0bbd285b54538d304eccf58fc3d8bd2a4b5729f1545d2219838f426da78cfbf1"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/PhotoPreviewActivity.kt",
+    "sha256": "3eae07f7ce1f5fb5142ce76c04048c1975eccad735efbb667cc586bb2708d5ef"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/AlbumMediaSwipeLayout.kt",
+    "sha256": "6f95f8e03ded473df139cb3f5398a6d9e31c2ce31e3080c5c99898e4a090a7d9"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/AlbumPreviewContract.kt",
+    "sha256": "dfd0a51f484574dd2bf1ebd8cde05fbda132bfe013a620ab81d5e462c76f98e6"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/DiaryDetailActivity.kt",
+    "sha256": "ca39e920a58a175b1b36d25315dd8d92b7dfbcb0ecfce24fed89f12112c9af49"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/MotionPhotoDetector.kt",
+    "sha256": "8f55e631dc4e0e1015ed348be84db93a2d092eec761d27b180902d8e66401dc1"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/DiaryContentEditor.kt",
+    "sha256": "118288c30fe54f73837fcf1d8f82d324b3ad7e99908a27b671e289303191ec5d"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/AlbumAdapter.kt",
+    "sha256": "3e3f702f78ee7965322aab27cf11f7a0d919b46fdc33f9fbcb56fd46fd8a8249"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/AlbumPreviewActivity.kt",
+    "sha256": "57d0d160b4903c57d475d517bfdb364bff1c2417f907f46af7d123c040c2bce2"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/DiaryRowEditText.kt",
+    "sha256": "341b2fab02fbabf7c577bf82aaf7fae892d9dbb066717176a0b0776178cefb4b"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/AlbumActivity.kt",
+    "sha256": "6bfd9bec56c844d168a088eccfd952e8c65f1a329eb46ef50cb182d6d65363a3"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/EditActivity.kt",
+    "sha256": "18c3faef5e8d5831ac36039d917113d587845e4f7ace74eae1fa513dee43c6a4"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/ui/DiaryDetailMediaAdapter.kt",
+    "sha256": "8ee4175d8f4f8831863b41bb11dd5484d6ff54eea87c24be713f7f43744d19c3"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/ui/DiaryPageAdapter.kt",
+    "sha256": "928e58c4e4b43e21e29f3cf91e7a479b396e58f4922cc95b17e6ba3ace7dfce2"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/ui/DailyFragment.kt",
+    "sha256": "b0eb4a34005601a3230052cdbfe045d0c4e0e73483e5a0abd28641584cb65207"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/ui/GrowthFragment.kt",
+    "sha256": "86f726af282a4690edcef37ddab6e87765ccd19fc6087bb4623a3c65194ddc2c"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/ui/GrowthTopicAdapter.kt",
+    "sha256": "18c8b1f4511294e9699d4184aff94c9fed25248b18738bc630a5cf0b4567d02a"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/ui/AddEntryDialogFragment.kt",
+    "sha256": "fdb9a51a1bcef55ea05ca61c76b12fab204039436222589f1f9d5c452dab8486"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/ui/DailyEntryAdapter.kt",
+    "sha256": "85ed06282caf5d7308c4f37b7073f333bfa89c2cb92890e46496ccbf1d25376e"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/diary/GrowthTopics.kt",
+    "sha256": "f22e2a4f3e5594a81ac41ab2855d7653e20fd17b5b8f15477a942a777cc17cd9"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/diary/DiaryDatabase.kt",
+    "sha256": "752a9667524f4142746a08996af53b741132c85990ecc8b5ef1e31603686acd7"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/diary/DiaryMetadataDao.kt",
+    "sha256": "a062b67e454e608208b2ebc07e36bd2067738fa07eb5b220c324e4cf9c7b19e6"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/diary/DiaryVideoComposer.kt",
+    "sha256": "d0c6f26f9946524305b96d7ae21a8aa1b34e08ff81ac717da271058ec71c6129"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/diary/DiaryMetadata.kt",
+    "sha256": "b94cc359248f98432058f2f26a9727a1bed1ded488cfab922905e95a749a5abd"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/diary/DiaryMediaViewModel.kt",
+    "sha256": "6ff8cc84c4951b11e7a81e439fb66ec2112fa5d7845f487fda5d420251f34085"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/diary/DiaryDraftStore.kt",
+    "sha256": "fbbb38efbddf5e164602cdc00c941c592da669482b99a40e76a323df9795e1d7"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/diary/DiaryMedia.kt",
+    "sha256": "d829e4bcbbadd6ff83d798b9f7fc8c910df82753baca3400feeb225b94daea9a"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/diary/DiaryStore.kt",
+    "sha256": "28431ff8bef1229b1c5af9dc9c9956c383a281781249aea55874ef0495f42a1a"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/diary/DiaryMediaRepository.kt",
+    "sha256": "bce78cb41a55c592cc6ac42934edc4968f63a5d4efc3feabd73cfd93e2582168"
+  },
+  {
+    "path": "app/src/main/java/com/betterme/app/diary/DiaryIndexStore.kt",
+    "sha256": "946d02d34282fb1ddfaff6edf7036572cb07f65fed018ae27465c1eba02ca3f1"
+  },
+  {
+    "path": "app/src/main/AndroidManifest.xml",
+    "sha256": "a6d3db5b1a6393d3fb9566e3671c8d64f10f2fc892864aa60e4519b3604842fb"
+  },
+  {
+    "path": "app/src/main/res/anim/slide_up.xml",
+    "sha256": "044e9765f0e203a88d52dd03106293b4439d27834c7e7e31842e24fa3d8dc430"
+  },
+  {
+    "path": "app/src/main/res/anim/slide_down.xml",
+    "sha256": "b6460163542fc3cfe6a052de7ca60efe70ccfee58c6b90c1935108e27211ce47"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_player_play.xml",
+    "sha256": "32e31593d1809b1813aeb119f0f8eb5e3a185f739767ccc0e92be2bdf0d1a2ac"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_btn_phone_light.xml",
+    "sha256": "0b4e83d40f1f66d7c0eaae320b18b6051ec967cad12713045ef4aea5d1cebe9f"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_album_selected_thumb.xml",
+    "sha256": "7b3ef5f1c094feadd2c6de9e6cda51f4c553544df187bfe8674b91080b80c8ff"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_diary_checklist_unchecked.xml",
+    "sha256": "51f2f5bbd597a02c4b75856df9f0cb8901b8fabfa89eeb5bb243207cdc012b4a"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_diary_smile.xml",
+    "sha256": "2707325078688dec9d0257935edfb7032831485d1a35fd44b1dc1e12a442ec3a"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_play_small.xml",
+    "sha256": "c8114d9647d0e044e13f03360d8266f84ac7e2dc8f1c5379cb34dbb45c5a6095"
+  },
+  {
+    "path": "app/src/main/res/drawable/diary_checklist_button.xml",
+    "sha256": "d03b632827e178964bc8320c27dbf3056197cced4d352511e92abc3c683fe54e"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_diary_video_remove.xml",
+    "sha256": "37545d625cd2ca335134d88ac8e338c23b95e2af7125ab755e78baf5c9c3f4c8"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_close.xml",
+    "sha256": "016563662f5ad6bcab095fa181bd0e7f8425a7fe715db87fc483e3a8729d58d0"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_camera.xml",
+    "sha256": "eb51b3cc1bd0a1d189272d1a37f2241ed2183bda0099a1af627c4eb81044a510"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_badge.xml",
+    "sha256": "4c7c0046b948013dba02a2b0a5fb140caa442e9feb70deff73eef0888f3c0b5d"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_sheet_top.xml",
+    "sha256": "3b64250988dec7fa6c428f8bbc0c968c2e84e366d5d18835df50895de228394d"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_empty_growth.xml",
+    "sha256": "7c722410d2ae4ba793ac7ba064d3bc58929bb09332f0a82b0ab2392f61f75f88"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_album_remove.xml",
+    "sha256": "5b02e9b3b5ee50f8de60e378ddaf26264d71a08a0f4e62e527a16aa41b6315d9"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_diary_done.xml",
+    "sha256": "2b608813cd45545e6efdafbce217cc45c59c62a97d8c01b4fb4a248e069dd467"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_plus.xml",
+    "sha256": "284cef6bfd2ba3cd4488fe96ef18a0ae858eb3604a535502ecf760615a151f58"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_tile_camera.xml",
+    "sha256": "c32b463f42b2a01ab939b08bc31dd777756bee0aa8fd27992f87cdf3af307633"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_plus_circle.xml",
+    "sha256": "abfac85ce542bce092e525321a8bbd51f3a89979ed5597d54d81a9ce8cb6e978"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_video.xml",
+    "sha256": "df5eed60689ccca2a0074e33d2123aab35f0d62966771e4769e86b4cc42ef139"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_video_time.xml",
+    "sha256": "05ccf53b2590b163167b90b825d5fa708ce8ee4136b0b813e16bb5de96de9a89"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_diary_clock.xml",
+    "sha256": "c519fdd7fed82c2d4dafa73a43dfa8db3fa6ce2b37520c92089f00145de09fbb"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_growth.xml",
+    "sha256": "1f84d5241b81ec753972be477d599a3b2d59db7c7bb40f6cb076876081e8eacf"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_diary_tag.xml",
+    "sha256": "79ad83dc62a344641f609de8a27977bd82835449a14f500be790bca2d66dea5c"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_arrow_back.xml",
+    "sha256": "e9dcdf923642e1c4e98996bad2899ee6ac7add0bf9c7a1c4a1a9583259b7d122"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_tile_gallery.xml",
+    "sha256": "2998bb6bff7dd42bad49fea6adbac1878336d000c9c87d7696c3555ec41bb55c"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_pill_disabled.xml",
+    "sha256": "eebe7413a1d09ee41f38ce34a2385d941137ca9ce4f91afad80b0a0a460bef70"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_diary_down.xml",
+    "sha256": "94673ff8c9ec045c4daaca9798d9224f79b6b5e1625c2bfad1fb6c033c7bccfe"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_add_tile.xml",
+    "sha256": "fb0b7db1897ff22de78457ece4ae9ec5a3b2df58c8293464de45df8468d0a347"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_empty_daily.xml",
+    "sha256": "79f492ab83873a43bb9affabee78db986b6aba9d09eef710e71100712ae1d91c"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_daily.xml",
+    "sha256": "ddbb79f0b5dd27f57295722ef6d922f0903cb9ae4c799208d25c028216810396"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_album_dropdown.xml",
+    "sha256": "49fadb6c08c054f6c21ecb4d503fb0219cc1d638d0a2911ae4b45dd417e15dbf"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_diary_mic.xml",
+    "sha256": "2987f489e44a7fc361a0219431c870f231364305c50b522165e2c07b59c6da59"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_text.xml",
+    "sha256": "95e1f8bd2c8b04ff032d650b353ca8296964a50706d1f0150e5ad87dedbd4db8"
+  },
+  {
+    "path": "app/src/main/res/drawable/album_unchecked.xml",
+    "sha256": "22e6c4d3476d2b91e1673900d076840ee6ee3a659be14d4f34cffd18ef391b7b"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_chevron_right.xml",
+    "sha256": "e378fdc24c50d35a477976ff48ca997897c505ffcbe4b2b7f8f36e08e729c4f0"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_pill_primary.xml",
+    "sha256": "ea86d77222f6478694a095265a76dd647cf93a1f8685fc791cbfd576e209b722"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_card.xml",
+    "sha256": "adf0e260bb0aab463529bf7bf372813d15b7b033dc997533c861d8a2fb80595d"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_diary_checklist.xml",
+    "sha256": "0725336c4d7ee04e2f6365d7f34f2ef89bde1685657a7e8d1fc165c1d6e167bf"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_tile_text.xml",
+    "sha256": "4f36f3468998f433f23be8246987bc96317e23b9697e6ba640bf0aa89889dbdc"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_album_live_photo.xml",
+    "sha256": "cbe1f59589c5c53a222be0f356566f7e8b21c73dc47cd4ca67e7fcb76d3afeb5"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_detail_dot.xml",
+    "sha256": "44ddf826642d459982873484097c0e51cce4857bb03916c8a1df35b6229c09b0"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_daily_more.xml",
+    "sha256": "782264251c2581bf8e4495543f397a5dca2201fa632d88e280ac8efc90a26ca6"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_preview_footer.xml",
+    "sha256": "4352fe95d08e142c0e3a93e9f3ef8410d27b1b3679e38a2c30dd3d18dbc26787"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_diary_book.xml",
+    "sha256": "126a37bc4ffce7effc2130fbd29055e968f107a75596e05912740fe9180d0e68"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_album_remove.xml",
+    "sha256": "9136c82c33170fd1a727e79dc99e3d9f326e67955d47e4ed305ff16ff99108ce"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_preview_back.xml",
+    "sha256": "90d470a35fa6f914ee28b64c478868c224c195f71db85b3743c7811c671113d3"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_preview_play.xml",
+    "sha256": "a12f14322f6e878eb3400a27ea52e8133a96939efdf122edc102983d89f756e6"
+  },
+  {
+    "path": "app/src/main/res/drawable/album_checked.xml",
+    "sha256": "544f62acad6a5c60c8edf5747aa5ad54af881a9046cede932c7bb7b06d785b13"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_diary_checklist_checked.xml",
+    "sha256": "ce9b16c014171ec2fd5a364fe3ecf7166169208a2607cb9cb7695b717e1b50db"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_nav_item.xml",
+    "sha256": "5b6875cf0284fc00b16731fbff27a619226703c1ac25440c9b681d7061a91bac"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_diary_camera.xml",
+    "sha256": "fdd5995dd16b2c17f0e92b132a82d375e311d8a3c4a5bed2a05651967454bbc0"
+  },
+  {
+    "path": "app/src/main/res/drawable/album_button.xml",
+    "sha256": "70fc10eefa282a0cd18512873f34917e98ab4adaef39e9164247d81a64d8d9cc"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_launcher_foreground_inset.xml",
+    "sha256": "f3feac5a092e1f2c5a588d7d51547cf4e47a03116a0ffa52ac99af8a3163e676"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_diary_paper.xml",
+    "sha256": "a29ec607c614d705171dbebc6c21fc3517ae2e05eda709381200c6741605cbc7"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_thumb_frame.xml",
+    "sha256": "7c6017b180fbbaffd2633258a57d7b37ce256c7885167516f3ae4499c7584785"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_image_placeholder.xml",
+    "sha256": "50b2cc3e6387bdb3348b4575ea4f5c16ef7d044434f812812302898be72af694"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_cancel_button.xml",
+    "sha256": "0b4e83d40f1f66d7c0eaae320b18b6051ec967cad12713045ef4aea5d1cebe9f"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_diary_save.xml",
+    "sha256": "6e363a53c3a1e069ebbd58b999f9ac9d6f924582cabe610a9a563484882246ee"
+  },
+  {
+    "path": "app/src/main/res/drawable/bg_tile_video.xml",
+    "sha256": "fa99c9f1a360457dbe2ebb6576b9376b24246258294bfe2324f8b7c840941073"
+  },
+  {
+    "path": "app/src/main/res/drawable/ic_gallery.xml",
+    "sha256": "28805d947e11a9c39c9ef423734d90a5e06a3c4d1a22edb5ddf7d760f0185676"
+  },
+  {
+    "path": "app/src/main/res/layout/activity_edit.xml",
+    "sha256": "1150cb4c14d00f0ad2118f9d989f27587a79aae5ef4c22fa26d1edfa9391dbe1"
+  },
+  {
+    "path": "app/src/main/res/layout/activity_album_preview.xml",
+    "sha256": "6c55ebfdaaf0458013a94989cd702987c9e187cd13cc9803b65ab3af9eb66a50"
+  },
+  {
+    "path": "app/src/main/res/layout/item_media_cell.xml",
+    "sha256": "3ce58eb29f36ff39af716e5917c14638847caf49d78a7b30a972ddfa61f2ca47"
+  },
+  {
+    "path": "app/src/main/res/layout/activity_video_player.xml",
+    "sha256": "ab3889f0b87e4fcd1693dd5bac5d2adc9d13e74f506d0135079a2c39fd82fdc0"
+  },
+  {
+    "path": "app/src/main/res/layout/fragment_growth.xml",
+    "sha256": "51e49312be9f932785906c697591d03a81299708fae9b0ecb33fcda0da8cd406"
+  },
+  {
+    "path": "app/src/main/res/layout/activity_photo_preview.xml",
+    "sha256": "25de8337012cb23f8d5e280c49df5f45ed928e6b4c7466bab7e7ea00fae3e8fa"
+  },
+  {
+    "path": "app/src/main/res/layout/item_diary_detail_media.xml",
+    "sha256": "d2a1bb12e0b7c8ff5c1f6313817632e08021188cc1fee25e5b5aab64e1875f2e"
+  },
+  {
+    "path": "app/src/main/res/layout/dialog_diary_unsaved.xml",
+    "sha256": "fa7be7ed34050f432a4786760f2798debdcd2ef10fae56ed25584f602c82aa7f"
+  },
+  {
+    "path": "app/src/main/res/layout/item_edit_media_add.xml",
+    "sha256": "9c48a1e094df3bbd5d8fa2d170349909ce86d0d042ed79745194d37fdea34d01"
+  },
+  {
+    "path": "app/src/main/res/layout/item_growth_topic.xml",
+    "sha256": "bfd6b6d8d4ba7c5fd87acdd84db0c170ddf884000e4c25f8b87b05f166fb0ee9"
+  },
+  {
+    "path": "app/src/main/res/layout/activity_album.xml",
+    "sha256": "f374df1ef527d7c25bde1e127fca97031f67f2d48056df06313962c26f92f014"
+  },
+  {
+    "path": "app/src/main/res/layout/dialog_add_entry.xml",
+    "sha256": "3a5e0bc6eea5b833d35c58d65a01a55114019f8564ca9122663a89c92ed232a6"
+  },
+  {
+    "path": "app/src/main/res/layout/item_daily_entry.xml",
+    "sha256": "ee85928bd9fea1e3d5031782b17e4243cab572c9f69da1883a481459811a912e"
+  },
+  {
+    "path": "app/src/main/res/layout/item_daily_photo.xml",
+    "sha256": "fdb283f4f2ea7f709ad24d6922aa12b1048822541fe9e1ce5002acdf27c4d4b3"
+  },
+  {
+    "path": "app/src/main/res/layout/item_edit_media.xml",
+    "sha256": "7ad6862a900e5a0318707781a088121b9e9c90652dd1f8c262a374aad28820fc"
+  },
+  {
+    "path": "app/src/main/res/layout/activity_diary.xml",
+    "sha256": "926a65c364039176b924d204553a14e8e3eca4a1c5b5104446f75342cbeed364"
+  },
+  {
+    "path": "app/src/main/res/layout/activity_diary_detail.xml",
+    "sha256": "052394c6fa047f6b74670c352715c2ef028e8ec85719040b6512a2ff6c6cd393"
+  },
+  {
+    "path": "app/src/main/res/layout/item_diary_editor_row.xml",
+    "sha256": "4d730b53adffed20c2f163f01f57436caa17e97b4dcf3adb58b983e6020f5047"
+  },
+  {
+    "path": "app/src/main/res/layout/activity_main.xml",
+    "sha256": "9a0adcdaf7323817a4b1bb845dcf460f2533721992e7eda7d4959998c6b0e20d"
+  },
+  {
+    "path": "app/src/main/res/layout/fragment_daily.xml",
+    "sha256": "11f12aa76d7c9126db90a827d00db9f5e59f6306bf3ec2f4412f85ddae89c74d"
+  },
+  {
+    "path": "app/src/main/res/color/diary_save_text.xml",
+    "sha256": "5da8c28f56d6c783f6ff6c86b1fdb1d0373f2c914b4e6e76e0e3270e1b52e54a"
+  },
+  {
+    "path": "app/src/main/res/color/button_primary_text.xml",
+    "sha256": "f4d76f545a0f371ce8ca5e3f5f1789b1c767ed358584fcee3e1c0372663540c0"
+  },
+  {
+    "path": "app/src/main/res/values/checklist_resources.xml",
+    "sha256": "702ecd18b828999ba49993a71fd7d9e024fbef1b8e1aedb859cf3efda73f8913"
+  },
+  {
+    "path": "app/src/main/res/values/daily_styles.xml",
+    "sha256": "c00e9debe83b0578a409dd741d9ac61490244acd52529123ed0bcf11757e7978"
+  },
+  {
+    "path": "app/src/main/res/values/colors.xml",
+    "sha256": "f131d3fe1b01317cf6acfac2c1d2491992a925e1850b88436952a6aeed537236"
+  },
+  {
+    "path": "app/src/main/res/values/preview_resources.xml",
+    "sha256": "339dc7c1f537365d2a5bee390e3534a8334c41c5b4e156dcdee742b4536fd84b"
+  },
+  {
+    "path": "app/src/main/res/values/growth_strings.xml",
+    "sha256": "e5d8ecf2fecd97b2802deb7a97e0ec6ddb1a708d94e46971c9aaa5cc057b945c"
+  },
+  {
+    "path": "app/src/main/res/values/themes.xml",
+    "sha256": "0379fe4f2199160a360fd29472f1af4c7383a2145dfe1407de93106f5d489e74"
+  },
+  {
+    "path": "app/src/main/res/values/diary_strings.xml",
+    "sha256": "7d78a52f22440b8abbbb1c9a2325aa3bee84390d89be1d3fade6324331bc0cd3"
+  },
+  {
+    "path": "app/src/main/res/values/diary_styles.xml",
+    "sha256": "82114cbf198a5f0d1444d173e6ab20c47c332571629e8123880488451ed360da"
+  },
+  {
+    "path": "app/src/main/res/values/strings.xml",
+    "sha256": "d3a0aa0ef2d1bb2d15f72d80b78250239ef42d8ad0b57800386ebdc8b1764680"
+  },
+  {
+    "path": "app/src/main/res/values/detail_strings.xml",
+    "sha256": "b2934a2070d9f4923ba1aff66c67ecb695bb610fd1dea433a17b41cd6781dc60"
+  },
+  {
+    "path": "app/src/main/res/values/player_strings.xml",
+    "sha256": "88d4e2d9a5007a28493b996943f67462f30a3c2b145f93f3e9f96987f2c2e214"
+  },
+  {
+    "path": "app/src/main/res/values/media_resources.xml",
+    "sha256": "40f2f8282b1462d35b657b444a13f4074ab7edb34df871799cc0a6465eb53647"
+  },
+  {
+    "path": "app/src/main/res/values/daily_strings.xml",
+    "sha256": "ea2e374bdd4366d242443e680a7a2cbb4f3f69e17558e957a3a525462c5fb27a"
+  },
+  {
+    "path": "app/src/main/res/values/photo_preview_strings.xml",
+    "sha256": "3469471f9ac97fdf2b274d6f2b04243117d3b9b332d7f8422580d8e080b19c01"
+  },
+  {
+    "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+    "sha256": "5eeffe607b590db2b1da613d57a30305a1a0e7cc0a1a84992f9602302104b0c9"
+  },
+  {
+    "path": "app/build.gradle.kts",
+    "sha256": "6163764fd9c03af28944cfdfc5813c22967ffdbdfd57e6e2bcf4826a069ac06b"
+  },
+  {
+    "path": "build.gradle.kts",
+    "sha256": "7c3aed29792c93629b8b056140949cce51983fa7e5c71f35bde56be22f6641f9"
+  },
+  {
+    "path": "settings.gradle.kts",
+    "sha256": "04ccea8adb37d5d5a3e58c992941c48d175af6af4bbc47d7ab21975c6c918df0"
+  }
+]

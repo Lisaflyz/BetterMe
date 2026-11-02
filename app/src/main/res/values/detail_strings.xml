@@ -1,0 +1,16 @@
+<resources>
+    <string name="detail_heading">日常</string>
+    <string name="detail_heading_date">日常：%1$s</string>
+    <string name="detail_edit">编辑</string>
+    <string name="detail_loading">正在读取日记…</string>
+    <string name="detail_load_error">暂时无法读取这篇日记，请重试或返回</string>
+    <string name="detail_retry">重试</string>
+    <string name="detail_photo">全屏查看图片，第 %1$d 张，共 %2$d 张</string>
+    <string name="detail_play_video">全屏播放视频</string>
+    <string name="detail_media_error">媒体暂时无法加载</string>
+    <string name="detail_media_retry">重新加载媒体</string>
+    <string name="detail_page">第 %1$d 页，共 %2$d 页</string>
+    <string name="detail_checked">已完成</string>
+    <string name="detail_unchecked">未完成</string>
+    <string name="detail_tag">%1$s：%2$s</string>
+</resources>

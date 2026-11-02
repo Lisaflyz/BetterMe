@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/diaryRoot"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/surface"
+    android:focusableInTouchMode="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="64dp"
+        android:gravity="center_vertical" android:paddingEnd="8dp">
+        <ImageButton android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp"
+            android:padding="12dp" android:src="@drawable/ic_arrow_back"
+            android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="@string/back"/>
+        <LinearLayout android:id="@+id/btnDate" android:layout_width="0dp" android:layout_height="48dp"
+            android:layout_weight="1" android:orientation="horizontal" android:gravity="center"
+            android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true"
+            android:contentDescription="@string/diary_date">
+            <TextView android:id="@+id/tvDay" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="27sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+            <TextView android:id="@+id/tvMonth" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="6dp" android:textSize="13sp" android:textColor="@color/text_primary"/>
+            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="6dp"
+                android:src="@drawable/ic_diary_down" android:importantForAccessibility="no" app:tint="@color/text_secondary"/>
+        </LinearLayout>
+        <TextView android:id="@+id/btnSave" android:layout_width="wrap_content" android:layout_height="48dp"
+            android:minWidth="64dp" android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:gravity="center" android:text="@string/diary_save_label" android:textSize="14sp"
+            android:textColor="@color/diary_save_text" android:maxLines="1"
+            android:background="@drawable/bg_diary_save" android:clickable="true" android:focusable="true"
+            android:contentDescription="@string/diary_save"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/sheet_divider"/>
+    <LinearLayout android:id="@+id/entryLoadState" android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+        android:padding="24dp" android:visibility="gone">
+        <ProgressBar android:id="@+id/entryLoading" android:layout_width="40dp" android:layout_height="40dp"
+            android:indeterminateTint="@color/text_secondary"/>
+        <TextView android:id="@+id/entryLoadMessage" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:gravity="center" android:text="@string/diary_loading_entry"
+            android:textColor="@color/text_secondary" android:textSize="14sp"/>
+        <Button android:id="@+id/btnRetryEntry" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="@string/diary_retry_entry" android:visibility="gone"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/editorScroll" android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:fillViewport="true" android:overScrollMode="never">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:clipChildren="false" android:clipToPadding="false"
+            android:orientation="vertical" android:paddingStart="20dp" android:paddingEnd="20dp">
+            <HorizontalScrollView android:id="@+id/mediaScroll" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:clipChildren="false" android:clipToPadding="false"
+                android:layout_marginTop="22dp" android:scrollbars="none" android:overScrollMode="never">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:clipChildren="false" android:clipToPadding="false"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <LinearLayout android:id="@+id/photoStrip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:clipChildren="false" android:clipToPadding="false"
+                        android:orientation="horizontal"/>
+                    <LinearLayout android:id="@+id/btnAddPhoto" android:layout_width="80dp" android:layout_height="80dp"
+                        android:background="@drawable/bg_add_tile" android:gravity="center" android:orientation="vertical"
+                        android:clickable="true" android:focusable="true" android:contentDescription="@string/diary_add_photo">
+                        <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_diary_camera"
+                            android:importantForAccessibility="no" app:tint="@color/text_secondary"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"
+                            android:text="@string/diary_add_photo" android:textColor="@color/text_secondary" android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout android:id="@+id/mediaStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:paddingTop="12dp" android:visibility="gone">
+                <TextView android:id="@+id/mediaMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" android:textSize="13sp"/>
+                <ProgressBar android:id="@+id/mediaProgress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="8dp" android:max="100"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <Button android:id="@+id/btnCancelMedia" android:layout_width="wrap_content" android:layout_height="48dp" android:text="取消处理"/>
+                    <Button android:id="@+id/btnRetryMedia" android:layout_width="wrap_content" android:layout_height="48dp" android:text="重试"/>
+                </LinearLayout>
+            </LinearLayout>
+            <EditText android:id="@+id/etTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:minHeight="64dp" android:layout_marginTop="12dp" android:background="@null"
+                android:gravity="center" android:hint="@string/diary_title_hint" android:inputType="textCapSentences"
+                android:maxLength="80" android:maxLines="2" android:saveEnabled="false"
+                android:imeOptions="actionNext"
+                android:paddingTop="12dp" android:paddingBottom="12dp" android:textSize="18sp"
+                android:textColor="@color/text_primary" android:textColorHint="@color/text_tertiary"/>
+            <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/sheet_divider"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="64dp"
+                android:fillViewport="true" android:scrollbars="none">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                    android:gravity="center" android:orientation="horizontal">
+                    <TextView android:id="@+id/btnWeather" style="@style/DiaryTag" android:text="@string/diary_weather"/>
+                    <TextView android:id="@+id/btnMood" style="@style/DiaryTag" android:text="@string/diary_mood"/>
+                    <TextView android:id="@+id/btnActivity" style="@style/DiaryTag" android:text="@string/diary_activity"/>
+                    <TextView android:id="@+id/btnTopic" style="@style/DiaryTag" android:text="@string/growth_topic"
+                        android:maxLines="1" android:ellipsize="end" android:maxWidth="280dp" android:visibility="gone"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/sheet_divider"/>
+            <com.betterme.app.DiaryContentEditor android:id="@+id/contentEditor" android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1" android:minHeight="240dp" android:background="@null" android:gravity="top|start"
+                android:saveEnabled="false" android:paddingTop="14dp" android:paddingBottom="14dp"/>
+            <TextView android:id="@+id/tvWordCount" android:layout_width="wrap_content" android:layout_height="32dp"
+                android:layout_gravity="end" android:layout_marginTop="8dp" android:layout_marginBottom="12dp"
+                android:paddingStart="12dp" android:paddingEnd="12dp" android:gravity="center"
+                android:background="@drawable/bg_btn_phone_light" android:textColor="@color/text_secondary" android:textSize="12sp"/>
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/sheet_divider"/>
+    <LinearLayout android:id="@+id/editorToolbar" android:layout_width="match_parent" android:layout_height="56dp"
+        android:orientation="horizontal" android:gravity="center_vertical" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/btnTime" style="@style/DiaryTool" android:src="@drawable/ic_diary_clock" android:contentDescription="@string/diary_insert_time"/>
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/btnPaper" style="@style/DiaryTool" android:src="@drawable/ic_diary_paper" android:contentDescription="@string/diary_paper"/>
+        <TextView android:id="@+id/btnFont" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1"
+            android:gravity="center" android:text="Aa" android:textSize="22sp" android:textColor="@color/text_secondary"
+            android:background="?attr/selectableItemBackgroundBorderless" android:clickable="true" android:focusable="true"
+            android:contentDescription="@string/diary_font"/>
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/btnChecklist" style="@style/DiaryTool" android:src="@drawable/ic_diary_checklist" android:contentDescription="@string/diary_checklist"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  相册多选页（参考 相册.jpg）：
+  顶部相册切换 + 取消；类型筛选（全部/照片/视频）；三列缩略图网格（多选带序号角标）；
+  底部“下一步(N)”按钮。
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/album_background"
+    android:orientation="vertical">
+
+    <!-- 标题和右侧取消；不再显示关闭图标或顶部数量提示。 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:gravity="center_vertical" android:paddingStart="20dp" android:paddingEnd="8dp">
+        <LinearLayout android:id="@+id/btnAlbum" android:layout_width="0dp" android:layout_height="48dp"
+            android:layout_weight="1" android:gravity="center_vertical" android:clickable="true" android:focusable="true"
+            android:background="?attr/selectableItemBackground" android:contentDescription="@string/album_choose_folder">
+            <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_weight="0" android:maxWidth="180dp" android:maxLines="1" android:ellipsize="end"
+                android:text="@string/album_all_folders" android:textColor="@color/album_text" android:textSize="17sp" android:textStyle="bold"/>
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:layout_marginStart="6dp"
+                android:src="@drawable/ic_album_dropdown" android:importantForAccessibility="no"/>
+        </LinearLayout>
+        <TextView android:id="@+id/btnCancel" android:layout_width="64dp" android:layout_height="48dp"
+            android:gravity="center" android:text="@string/album_cancel" android:textColor="@color/album_text" android:textSize="15sp"
+            android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/album_divider"/>
+
+    <!-- 类型筛选 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/chipAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvChipAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/album_filter_all"
+                android:textColor="@color/brand_gold"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/lineAll"
+                android:layout_width="24dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/brand_gold" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/chipVideo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvChipVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/album_filter_video"
+                android:textColor="@color/album_muted"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/lineVideo"
+                android:layout_width="24dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/chipPhoto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvChipPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/album_filter_photo"
+                android:textColor="@color/album_muted"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/linePhoto"
+                android:layout_width="24dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:id="@+id/btnPermissions" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp"
+        android:paddingHorizontal="16dp" android:gravity="center_vertical" android:text="管理照片与视频访问权限 ›"
+        android:textColor="@color/brand_gold" android:textSize="13sp" android:clickable="true" android:focusable="true"/>
+    <!-- 网格区域 -->
+    <com.betterme.app.AlbumMediaSwipeLayout
+        android:id="@+id/mediaSwipeArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingStart="2dp" android:paddingEnd="2dp" android:paddingTop="2dp" android:paddingBottom="8dp" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/brand_gold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/album_empty"
+            android:textColor="@color/album_muted"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </com.betterme.app.AlbumMediaSwipeLayout>
+
+    <FrameLayout android:id="@+id/selectedScroll" android:layout_width="match_parent" android:layout_height="102dp"
+        android:clipChildren="false" android:clipToPadding="false">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/selectedStrip"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="14dp" android:paddingBottom="14dp"
+            android:clipChildren="false" android:clipToPadding="false" android:scrollbars="none"/>
+    </FrameLayout>
+    <!-- 底部操作栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="14dp">
+
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/album_order_tip"
+            android:textColor="@color/album_muted"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_pill_disabled"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:minWidth="104dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="@string/album_next_0"
+            android:textColor="@color/album_background"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

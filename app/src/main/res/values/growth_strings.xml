@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="growth_title_hint">记录成长</string>
+    <string name="growth_topic">主题</string>
+    <string name="growth_topic_required">请选择一个主题再保存</string>
+    <string name="growth_topics_error">暂时无法读取主题，请重试</string>
+    <string name="growth_save">保存成长记录</string>
+    <string name="growth_saved">成长记录已保存到本机</string>
+    <string name="growth_heading_date">成长：%1$s</string>
+    <string name="growth_empty">还没有成长记录\n点击下方 +，选择成长复盘</string>
+    <string name="growth_load_error">暂时无法读取成长记录，请重试</string>
+    <string name="growth_topic_count">%1$d 篇</string>
+    <string name="growth_topic_expand">%1$s，%2$d 篇，点击展开</string>
+    <string name="growth_topic_collapse">%1$s，%2$d 篇，点击收起</string>
+    <string name="growth_uncategorized">未分类</string>
+    <string name="growth_delete_title">删除这篇成长记录？</string>
+    <string name="growth_delete_cleanup_warning">成长记录已删除，部分附属文件暂未清理</string>
+</resources>

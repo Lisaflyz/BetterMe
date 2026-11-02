@@ -1,0 +1,13 @@
+Generated with built-in imagegen.
+
+Create one finished, premium app icon for BetterMe, a personal growth and self-improvement app.
+
+Asset: a square 1024 × 1024 app-icon artwork, frontal flat view, edge-to-edge opaque background. Deliver the icon itself, without a device mockup, presentation board, border, inset tile, or typography.
+
+Design concept: quiet, steady personal growth. A single elegant, abstract ascending sprout: a gracefully tapering upward stem with two restrained geometric leaf shapes, the negative space subtly suggesting a rising path. Make the symbol feel like a distinctive, carefully balanced brand mark rather than a generic plant illustration. Minimal, confident, memorable silhouette, instantly recognizable at small launcher-icon size.
+
+Composition: center the compact symbol with generous breathing room, approximately 56–62% of the canvas height, all important content safely within the central area. Full square background; do not bake in rounded corners.
+
+Palette: rich deep forest green / near-black jade background (#102D27), with one warm muted champagne-gold symbol (#D9C295). Subtle tonal richness is acceptable, but the mark should appear predominantly flat, crisp and beautifully proportioned. Modern editorial luxury, understated and calm. Precise smooth curves and optically balanced geometry.
+
+Constraints: one symbol only; no text, no letters, no slogan, no watermark, no frame, no extra icons, no stars, no gradients that impair legibility, no glossy 3D rendering, no metallic reflections, no leaf veins, no decorative texture. Strong figure-ground contrast, refined simplicity, professional app-store-ready visual quality.
