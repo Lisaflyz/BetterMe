@@ -18,6 +18,8 @@ class ZoomImageView @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : AppCompatImageView(context, attrs, defStyleAttr) {
+    var allowPagingWhenFit = false
+    private var pagingBlockedForGesture = false
     private val transform = Matrix()
     private val imageBounds = RectF()
     private var zoom = 1f
@@ -113,6 +115,7 @@ class ZoomImageView @JvmOverloads constructor(
         when (event.actionMasked) {
             MotionEvent.ACTION_DOWN -> {
                 parent?.requestDisallowInterceptTouchEvent(true)
+                pagingBlockedForGesture = zoom > 1.001f
                 activePointer = event.getPointerId(0)
                 lastX = event.x
                 lastY = event.y
@@ -121,6 +124,8 @@ class ZoomImageView @JvmOverloads constructor(
                 clickCandidate = true
             }
             MotionEvent.ACTION_POINTER_DOWN -> {
+                parent?.requestDisallowInterceptTouchEvent(true)
+                pagingBlockedForGesture = true
                 activePointer = MotionEvent.INVALID_POINTER_ID
                 clickCandidate = false
             }
@@ -129,6 +134,10 @@ class ZoomImageView @JvmOverloads constructor(
                 if (event.pointerCount == 1 && index >= 0 && !scaleDetector.isInProgress) {
                     val x = event.getX(index)
                     val y = event.getY(index)
+                    if (allowPagingWhenFit && !pagingBlockedForGesture &&
+                        abs(x - downX) > touchSlop && abs(x - downX) > abs(y - downY)) {
+                        parent?.requestDisallowInterceptTouchEvent(false)
+                    }
                     if (abs(x - downX) > touchSlop || abs(y - downY) > touchSlop) clickCandidate = false
                     if (zoom > 1f && !clickCandidate) {
                         transform.postTranslate(x - lastX, y - lastY)

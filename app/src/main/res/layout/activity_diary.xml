@@ -54,13 +54,32 @@
                     <LinearLayout android:id="@+id/photoStrip" android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:clipChildren="false" android:clipToPadding="false"
                         android:orientation="horizontal"/>
-                    <LinearLayout android:id="@+id/btnAddPhoto" android:layout_width="80dp" android:layout_height="80dp"
-                        android:background="@drawable/bg_add_tile" android:gravity="center" android:orientation="vertical"
-                        android:clickable="true" android:focusable="true" android:contentDescription="@string/diary_add_photo">
-                        <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ic_diary_camera"
-                            android:importantForAccessibility="no" app:tint="@color/text_secondary"/>
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"
-                            android:text="@string/diary_add_photo" android:textColor="@color/text_secondary" android:textSize="12sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/btnAddPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_add_tile"
+                        android:clickable="true"
+                        android:contentDescription="@string/diary_add_photo"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_diary_camera"
+                            app:tint="@color/text_secondary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/diary_add_photo"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>

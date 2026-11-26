@@ -3,22 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@android:color/black">
-    <com.betterme.app.ZoomImageView android:id="@+id/photoView"
-        android:layout_width="match_parent" android:layout_height="match_parent"
-        android:contentDescription="@string/photo_preview_description" />
-    <ProgressBar android:id="@+id/loading" android:layout_width="32dp" android:layout_height="32dp"
-        android:layout_gravity="center" android:indeterminateTint="@android:color/white" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/photoPager"
+        android:layout_width="match_parent" android:layout_height="match_parent" />
     <FrameLayout android:id="@+id/safeControls" android:layout_width="match_parent" android:layout_height="match_parent">
-        <LinearLayout android:id="@+id/errorPanel" android:layout_width="match_parent" android:layout_height="match_parent"
-            android:gravity="center" android:orientation="vertical" android:padding="24dp"
-            android:clickable="true" android:visibility="gone">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="@string/photo_preview_error" android:textSize="15sp"
-                android:textColor="@android:color/white" android:gravity="center" />
-            <Button android:id="@+id/btnRetry" android:layout_width="wrap_content" android:layout_height="48dp"
-                android:layout_marginTop="12dp" android:text="@string/preview_retry"
-                android:textColor="@android:color/white" android:backgroundTint="@color/album_surface" />
-        </LinearLayout>
         <ImageButton android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp"
             android:layout_gravity="top|start" android:layout_marginTop="8dp" android:padding="12dp"
             android:src="@drawable/ic_arrow_back" app:tint="@android:color/white"

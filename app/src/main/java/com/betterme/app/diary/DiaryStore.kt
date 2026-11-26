@@ -97,9 +97,8 @@ class DiaryStore(context: Context) {
     suspend fun save(entry: DiaryEntry) = withContext(Dispatchers.IO) {
         lock.withLock {
             require(UUID.fromString(entry.id).toString() == entry.id)
-            require(!entry.kind.requiresTopic || GrowthTopics.normalize(entry.topic).isNotBlank())
             records.ensureReady()
-            records.save(entry)
+            records.save(entry.copy(topic = GrowthTopics.forSave(entry.topic, entry.kind)))
         }
     }
 

@@ -1,4 +1,5 @@
 <resources>
+    <string name="daily_heading">关心自己的每一天</string>
     <string name="daily_more">日记更多操作</string>
     <string name="daily_delete_title">删除这篇日记？</string>
     <string name="daily_delete_message">删除后无法恢复。</string>

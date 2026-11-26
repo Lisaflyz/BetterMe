@@ -61,6 +61,9 @@ ksp {
 }
 
 dependencies {
+    // 仅在 debug 构建中检测内存泄漏。
+    debugImplementation("com.squareup.leakcanary:leakcanary-android:2.14")
+
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation("androidx.room:room-runtime:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")

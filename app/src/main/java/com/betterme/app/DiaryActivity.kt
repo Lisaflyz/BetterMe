@@ -658,12 +658,10 @@ class DiaryActivity : AppCompatActivity() {
 
     private fun save() {
         if (!entryReady || saving || mediaModel.state.value.busy) return
-        val value = snapshot().copy(updatedAt = System.currentTimeMillis(), topic = GrowthTopics.normalize(entry.topic))
-        if (value.kind.requiresTopic && value.topic.isBlank()) {
-            toast(R.string.growth_topic_required)
-            chooseTopic()
-            return
-        }
+        val value = snapshot().copy(
+            updatedAt = System.currentTimeMillis(),
+            topic = GrowthTopics.forSave(entry.topic, entry.kind)
+        )
         if (value.title.isBlank() && value.content.isBlank() && value.media.isEmpty()) {
             toast(R.string.diary_empty)
             return

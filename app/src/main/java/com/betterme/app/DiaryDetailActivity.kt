@@ -191,11 +191,17 @@ class DiaryDetailActivity : AppCompatActivity() {
 
     private fun previewPhoto(uri: String) {
         if (childOpen || isFinishing) return
-        if (pages.none { it.kind == DiaryMediaKind.IMAGE && it.uri == uri }) return
+        val photos = pages.filter { it.kind == DiaryMediaKind.IMAGE }.map { it.uri }
+        val initialIndex = photos.indexOf(uri)
+        if (initialIndex < 0) return
         childOpen = true
         pageIndex = binding.mediaPager.currentItem
         retainedScrollY = binding.contentScroll.scrollY
-        startActivity(Intent(this, PhotoPreviewActivity::class.java).putExtra(PhotoPreviewActivity.EXTRA_URI, uri))
+        startActivity(
+            Intent(this, PhotoPreviewActivity::class.java)
+                .putStringArrayListExtra(PhotoPreviewActivity.EXTRA_URIS, ArrayList(photos))
+                .putExtra(PhotoPreviewActivity.EXTRA_INITIAL_INDEX, initialIndex)
+        )
     }
 
     private fun playVideo(uri: String) {

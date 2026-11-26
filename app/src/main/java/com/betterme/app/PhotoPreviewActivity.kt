@@ -1,20 +1,25 @@
 package com.betterme.app
 
-import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import androidx.core.view.isVisible
 import com.betterme.app.databinding.ActivityPhotoPreviewBinding
+import com.betterme.app.ui.PhotoPreviewAdapter
 
-/** Read-only preview of the editor's imported image; only a URI is passed through the Intent. */
+/** Read-only photo paging with URI-only Intent arguments; single-image callers remain supported. */
 class PhotoPreviewActivity : AppCompatActivity() {
-    companion object { const val EXTRA_URI = "photo_uri" }
+    companion object {
+        const val EXTRA_URI = "photo_uri"
+        const val EXTRA_URIS = "photo_uris"
+        const val EXTRA_INITIAL_INDEX = "photo_initial_index"
+        private const val STATE_PAGE = "photo_page"
+    }
+
     private lateinit var binding: ActivityPhotoPreviewBinding
-    private val loader = MediaThumbLoader()
+    private lateinit var photoAdapter: PhotoPreviewAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,8 +36,14 @@ class PhotoPreviewActivity : AppCompatActivity() {
         }
         ViewCompat.requestApplyInsets(binding.root)
         binding.btnBack.setOnClickListener { finish() }
-        binding.btnRetry.setOnClickListener { loadPhoto() }
-        loadPhoto()
+        val photos = intent.getStringArrayListExtra(EXTRA_URIS)?.takeIf { it.isNotEmpty() }
+            ?: listOf(intent.getStringExtra(EXTRA_URI).orEmpty())
+        photoAdapter = PhotoPreviewAdapter(photos)
+        binding.photoPager.adapter = photoAdapter
+        binding.photoPager.isUserInputEnabled = photos.size > 1
+        val initialIndex = savedInstanceState?.getInt(STATE_PAGE)
+            ?: intent.getIntExtra(EXTRA_INITIAL_INDEX, 0)
+        binding.photoPager.setCurrentItem(initialIndex.coerceIn(0, photos.lastIndex), false)
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
@@ -47,18 +58,14 @@ class PhotoPreviewActivity : AppCompatActivity() {
         }
     }
 
-    private fun loadPhoto() {
-        binding.loading.isVisible = true
-        binding.errorPanel.isVisible = false
-        val uri = intent.getStringExtra(EXTRA_URI)?.takeIf { it.isNotBlank() }?.let(Uri::parse)
-        loader.loadPreview(uri, binding.photoView) { loaded ->
-            binding.loading.isVisible = false
-            binding.errorPanel.isVisible = !loaded
-        }
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putInt(STATE_PAGE, binding.photoPager.currentItem)
+        super.onSaveInstanceState(outState)
     }
 
     override fun onDestroy() {
-        loader.clear(binding.photoView)
+        photoAdapter.clear()
+        binding.photoPager.adapter = null
         super.onDestroy()
     }
 }
