@@ -95,11 +95,6 @@ app/src/main/res/
 > 说明：参考图 `首页.jpg`、`弹窗.jpg` 是小红书（Xiaohongshu）界面截图，本项目只借用了它的
 > 底栏 + 加号弹层交互与视觉风格；品牌图标来自 `better.jpg`。
 
-## 项目总结文档
-
-- [Word 总结](output/project-summary/BetterMe项目总结.docx)
-- [Markdown 总结](output/project-summary/BetterMe项目总结.md)
-- [文档与截图资料包](output/project-summary/BetterMe项目总结及截图.zip)
 
 当前包含 7 个 Activity、17 个布局 XML。总结提供页面与视图映射、交互契约、存储流程及架构图。
 13 张截图沿用 2026-10-31 采集的已安装版本，用于展示保留页面；不代表本次清理已运行验证。
